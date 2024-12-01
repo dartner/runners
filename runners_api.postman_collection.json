@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "381d45a0-548b-47b7-ba0c-548b5679ef8c",
+		"name": "Runners Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40123913"
+	},
+	"item": [
+		{
+			"name": "Get All Runners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/getRunners",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"getRunners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Runner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Kiss Jozsef\", \"age\": 30, \"gender\": \"Male\" }"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/addRunner",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"addRunner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Race Runners by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/getRaceRunners/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"getRaceRunners",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Race",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 1, \"name\": \"Sziget\", \"distance\": 15.0 }"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/updateRace",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"updateRace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Result",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"runner\": { \"id\": 1 }, \"race\": { \"id\": 2 }, \"timeInMinutes\": 25 }"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/addResult",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"addResult"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Average Time for a Race",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/getAverageTime/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"getAverageTime",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
