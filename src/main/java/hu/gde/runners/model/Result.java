@@ -16,5 +16,29 @@ public class Result {
     @ManyToOne
     private Race race;
     private int timeInMinutes;
+
+    public void setRunner(Runner runner) {
+        this.runner = runner;
+    }
+
+    public Runner getRunner() {
+        return runner;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
+    }
+
+    public Race getRace() {
+        return race;
+    }
+
+    public Integer getTimeInMinutes() {
+        return timeInMinutes;
+    }
+
+    public void setTimeInMinutes(Integer timeInMinutes) {
+        this.timeInMinutes = timeInMinutes;
+    }
 }
 
