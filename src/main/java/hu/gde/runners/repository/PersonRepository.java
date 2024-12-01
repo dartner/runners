@@ -1,5 +1,6 @@
-package hu.gde.runners;
+package hu.gde.runners.repository;
 
+import hu.gde.runners.model.Person;
 import org.springframework.data.repository.CrudRepository;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository

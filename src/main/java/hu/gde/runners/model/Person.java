@@ -1,4 +1,4 @@
-package hu.gde.runners;
+package hu.gde.runners.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
