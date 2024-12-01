@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class ResultController {
+public class ResultApiController {
     @Autowired
     private ResultRepository resultRepository;
 

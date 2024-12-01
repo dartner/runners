@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class RunnerController {
+public class RunnerApiController {
     @Autowired
     private RunnerRepository runnerRepository;
 

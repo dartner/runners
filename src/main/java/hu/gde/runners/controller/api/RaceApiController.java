@@ -1,19 +1,16 @@
 package hu.gde.runners.controller.api;
 
 import hu.gde.runners.model.Race;
-import hu.gde.runners.model.Runner;
 import hu.gde.runners.repository.RaceRepository;
-import hu.gde.runners.repository.RunnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class RaceController {
+public class RaceApiController {
     @Autowired
     private RaceRepository raceRepository;
 
